@@ -1,42 +1,45 @@
-body {
-    background-color: black; /* Fondo negro para la atmósfera oscura */
-    color: white; /* Texto blanco para contrastar */
-    font-family: 'Arial', sans-serif; /* Fuente sencilla y legible */
-    text-align: center; /* Centrar texto */
+* {
     margin: 0;
     padding: 0;
-    height: 100vh; /* Altura completa de la ventana */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrar verticalmente */
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
 }
 
-#main-content {
-    margin: auto; /* Centrar horizontalmente */
-    max-width: 600px; /* Ancho máximo del contenido */
-    padding: 20px; /* Espacio interno */
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Sombra para dar profundidad */
+body {
+    background-color: #0e0e0e;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#main-section, #secret-section {
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    transition: opacity 0.3s;
 }
 
 .hidden {
-    display: none; /* Oculta elementos cuando es necesario */
+    display: none;
 }
 
-.section {
-    border: 2px solid white; /* Borde blanco para las secciones */
-    padding: 10px;
-    margin: 10px 0; /* Margen superior e inferior */
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
-    border-radius: 5px; /* Bordes redondeados */
+.glitch-text {
+    font-size: 1.8em;
+    color: #f00;
+    animation: glitch 1.5s infinite;
 }
 
-input[type="text"] {
-    padding: 5px; /* Espaciado interno para los campos de texto */
-    margin-top: 5px; /* Margen superior para separar del texto */
-    border: 1px solid white; /* Borde blanco para los campos */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #00f; }
+    20% { text-shadow: -2px -2px #0f0; }
+    40% { text-shadow: 2px -2px #ff0; }
+    60% { text-shadow: -2px 2px #0ff; }
+    80% { text-shadow: 2px 2px #f0f; }
+    100% { text-shadow: -2px -2px #ff0; }
 }
 
