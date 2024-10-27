@@ -21,6 +21,10 @@ function showHistory() {
 
     const notes = document.getElementById("notes");
     notes.innerHTML = historyPart;
+
+    // Mostrar el título de la sección Historia
+    document.getElementById("historyTitle").classList.remove("hidden");
 }
+
 
 
