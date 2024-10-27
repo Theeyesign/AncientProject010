@@ -28,4 +28,31 @@ body {
     display: none;
 }
 
+.glitch-text {
+    font-size: 1.8em;
+    color: #f00;
+    animation: glitch 1.5s infinite;
+}
+
+.date-box {
+    margin: 20px 0;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #00f; }
+    20% { text-shadow: -2px -2px #0f0; }
+    40% { text-shadow: 2px -2px #ff0; }
+    60% { text-shadow: -2px 2px #0ff; }
+    80% { text-shadow: 2px 2px #f0f; }
+}
+
+}
+
 
