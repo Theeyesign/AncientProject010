@@ -13,13 +13,14 @@ function showHistory() {
     
     let historyPart = "";
 
-    if (day && month && year) {
-        historyPart = `Has introducido la fecha: ${day}/${month}/${year}. Aquí es donde irían partes de la historia.`;
+    if (day === "22" && month === "10" && year === "740") {
+        historyPart = "Este es el inicio, el viajero que nunca regresó ha regresado con malas noticias. Una guerra se aproxima.";
     } else {
-        historyPart = "Por favor, completa todos los campos de fecha.";
+        historyPart = `Has introducido la fecha: ${day}/${month}/${year}. Aquí es donde irían partes de la historia.`;
     }
 
     const notes = document.getElementById("notes");
     notes.innerHTML = historyPart;
 }
+
 
