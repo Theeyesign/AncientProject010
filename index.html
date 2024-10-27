@@ -14,12 +14,15 @@
     </div>
     <div id="secret-section" class="hidden">
         <h2>Conoce mi historia</h2>
-        <p>Esta es mi historia</p>
-        <input type="text" id="lettersInput" maxlength="7" placeholder="Escribe 7 letras" />
+        <div>
+            <input type="text" id="lettersInput" maxlength="7" placeholder="Escribe 7 letras" />
+        </div>
         <div id="date-inputs">
-            <input type="text" id="day" placeholder="Día" />
-            <input type="text" id="month" placeholder="Mes" />
-            <input type="text" id="year" placeholder="Año" />
+            <div class="date-box">
+                <input type="text" id="day" placeholder="Día" />
+                <input type="text" id="month" placeholder="Mes" />
+                <input type="text" id="year" placeholder="Año" />
+            </div>
             <button onclick="showHistory()">Mostrar Historia</button>
         </div>
         <div id="notes"></div>
