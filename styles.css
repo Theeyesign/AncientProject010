@@ -1,7 +1,7 @@
 body {
     background-color: black; /* Fondo negro para la atmósfera oscura */
     color: white; /* Texto blanco para contrastar */
-    font-family: 'Georgia', serif; /* Fuente mejorada */
+    font-family: 'Arial', sans-serif; /* Fuente sencilla y legible */
     text-align: center; /* Centrar texto */
     margin: 0;
     padding: 0;
@@ -31,3 +31,4 @@ body {
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
     border-radius: 5px; /* Bordes redondeados */
 }
+
