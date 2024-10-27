@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.getElementById("enterButton").addEventListener("click", function() {
-    const codeInput = document.getElementById("codeInput").value;
-    
+    const codeInput = document.getElementById("codeInput").value.trim(); // Usar .trim() para eliminar espacios
+
     if (codeInput === "Theringiswatching") {
         document.getElementById("main-content").classList.add("hidden");
         const hiddenContent = document.getElementById("hiddenContent");
