@@ -1,8 +1,23 @@
 body {
     background-color: black; /* Fondo negro para la atmósfera oscura */
     color: white; /* Texto blanco para contrastar */
-    font-family: 'Courier New', Courier, monospace; /* Fuente de estilo antiguo */
+    font-family: 'Georgia', serif; /* Fuente mejorada */
     text-align: center; /* Centrar texto */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+}
+
+#main-content {
+    margin: auto; /* Centrar horizontalmente */
+    max-width: 600px; /* Ancho máximo del contenido */
+    padding: 20px; /* Espacio interno */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Sombra para dar profundidad */
 }
 
 .hidden {
@@ -12,7 +27,7 @@ body {
 .section {
     border: 2px solid white; /* Borde blanco para las secciones */
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0; /* Margen superior e inferior */
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
     border-radius: 5px; /* Bordes redondeados */
 }
