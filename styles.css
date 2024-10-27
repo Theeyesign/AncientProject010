@@ -32,11 +32,12 @@ body {
     border-radius: 5px; /* Bordes redondeados */
 }
 
-#additionalContent {
-    margin-top: 20px; /* Espacio superior para el contenido adicional */
-    padding: 10px;
-    border: 2px solid white; /* Borde blanco */
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+input[type="text"] {
+    padding: 5px; /* Espaciado interno para los campos de texto */
+    margin-top: 5px; /* Margen superior para separar del texto */
+    border: 1px solid white; /* Borde blanco para los campos */
     border-radius: 5px; /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    color: white; /* Color del texto en los campos */
 }
 
