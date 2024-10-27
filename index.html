@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Project</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Las Ruinas De El Perdido</title>
 </head>
 <body>
-    <div id="main-content">
-        <h1>Bienvenido a la Aventura</h1>
-        <h2>Ingresa el código para continuar</h2>
-        <input type="text" id="codeInput" placeholder="Código...">
-        <button id="enterButton">Entrar</button>
-        
-        <div id="hiddenContent" class="hidden">
-            <h2>Contenido Revelado</h2>
-            <div id="sections" class="sections"></div>
-            <input type="text" id="letterInput" placeholder="Ingresa 7 letras...">
-            <button id="submitLetters">Enviar Letras</button>
-            <div id="additionalContent" class="hidden"></div>
-        </div>
+    <div id="main-section">
+        <h1 class="glitch-text">Introduce el código</h1>
+        <input type="text" id="codeInput" placeholder="Escribe el código aquí" />
+        <button onclick="checkCode()">Enviar</button>
     </div>
-
+    <div id="secret-section" class="hidden">
+        <h2>Conoce mi historia</h2>
+        <p>Esta es mi historia</p>
+        <input type="text" id="lettersInput" maxlength="7" placeholder="Escribe 7 letras" />
+        <p id="date-display"></p>
+        <div id="notes"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
