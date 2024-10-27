@@ -8,14 +8,14 @@
 </head>
 <body>
     <div id="main-section">
-        <h1 class="glitch-text">Introduce el código</h1>
+        <h1>Introduce el código</h1>
         <input type="text" id="codeInput" placeholder="Escribe el código aquí" />
         <button onclick="checkCode()">Enviar</button>
     </div>
     <div id="secret-section" class="hidden">
         <h2>Conoce mi historia</h2>
         <div>
-            <input type="text" id="lettersInput" maxlength="7" placeholder="Escribe 7 letras" />
+            <input type="text" id="lettersInput" maxlength="7" placeholder="? Escribe 7 letras" />
         </div>
         <div id="date-inputs">
             <div class="date-box">
@@ -25,11 +25,13 @@
             </div>
             <button onclick="showHistory()">Mostrar Historia</button>
         </div>
+        <h3 id="historyTitle" class="hidden">Historia</h3>
         <div id="notes"></div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
