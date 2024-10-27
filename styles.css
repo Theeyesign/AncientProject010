@@ -1,0 +1,18 @@
+body {
+    background-color: black; /* Fondo negro para la atmósfera oscura */
+    color: white; /* Texto blanco para contrastar */
+    font-family: 'Courier New', Courier, monospace; /* Fuente de estilo antiguo */
+    text-align: center; /* Centrar texto */
+}
+
+.hidden {
+    display: none; /* Oculta elementos cuando es necesario */
+}
+
+.section {
+    border: 2px solid white; /* Borde blanco para las secciones */
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-radius: 5px; /* Bordes redondeados */
+}
