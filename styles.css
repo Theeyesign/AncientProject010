@@ -28,15 +28,15 @@ body {
     display: none;
 }
 
-.glitch-text {
-    font-size: 1.8em;
-    color: #f00;
-    animation: glitch 1.5s infinite;
-}
-
 .date-box {
     margin: 20px 0;
 }
 
+input {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 
