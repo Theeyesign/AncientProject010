@@ -1,7 +1,7 @@
 body {
     background-color: #111;
     color: #eee;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial', sans-serif; /* Cambié a una fuente más bonita */
     text-align: center;
 }
 
@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-size: 2em;
+    font-size: 2.5em; /* Aumenté el tamaño del texto */
 }
 
 #book {
@@ -27,4 +27,13 @@ h1, h2, h3 {
     font-size: 20px;
     margin: 10px 0;
 }
+
+input[type="date"] {
+    font-size: 1.5em; /* Aumenté el tamaño del input de fecha */
+}
+
+#historyText {
+    font-size: 1.5em; /* Aumenté el tamaño del texto de historia */
+}
+
 
