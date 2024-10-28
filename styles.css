@@ -5,25 +5,37 @@ body {
     text-align: center;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
 .text-container {
-    margin-top: 20px;
+    background-color: rgba(30, 30, 30, 0.8); /* Fondo con opacidad */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 36px; /* Tamaño de fuente más grande */
+    font-size: 32px; /* Tamaño de fuente más grande */
     margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 24px; /* Tamaño de fuente más grande para los subtítulos */
+    font-size: 22px; /* Tamaño de fuente más grande para los subtítulos */
     margin: 20px 0;
 }
 
 input[type="text"],
 input[type="date"] {
-    width: 80%; /* Ancho de los campos de texto */
+    width: 70%; /* Ancho de los campos de texto */
     padding: 10px;
-    font-size: 18px; /* Tamaño de fuente más grande */
+    font-size: 20px; /* Tamaño de fuente más grande */
     margin: 10px 0;
     border: 2px solid #e0e0e0; /* Borde claro */
     border-radius: 5px; /* Bordes redondeados */
@@ -33,7 +45,7 @@ input[type="date"] {
 
 button {
     padding: 10px 20px;
-    font-size: 18px; /* Tamaño de fuente más grande */
+    font-size: 20px; /* Tamaño de fuente más grande */
     cursor: pointer;
     background-color: #444; /* Color de fondo del botón */
     color: #e0e0e0; /* Color del texto del botón */
