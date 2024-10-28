@@ -5,7 +5,7 @@ function checkInitialCode() {
         document.getElementById("code-section").classList.remove("hidden");
         document.getElementById("book-icon").classList.remove("hidden");
     } else {
-        alert("Código incorrecto.");
+        alert("Código inicial incorrecto.");
     }
 }
 
@@ -26,11 +26,12 @@ function toggleBook() {
 function checkCode() {
     const letterCode = document.getElementById("letterCode").value;
     const dateCode = document.getElementById("dateCode").value;
+    const codeMessage = document.getElementById("codeMessage");
 
-    if (letterCode === "XXXXXXX" && dateCode === "22/10/740") {  // Reemplaza "XXXXXXX" y la fecha según prefieras
-        alert("Este es el inicio, el viajero que nunca regresó ha regresado con malas noticias. Una guerra se aproxima.");
+    if (letterCode === "XXXXXXX" && dateCode === "22/10/740") {  // Ajusta los valores según tus necesidades
+        codeMessage.textContent = "Este es el inicio, el viajero que nunca regresó ha regresado con malas noticias. Una guerra se aproxima.";
     } else {
-        alert("Código o fecha incorrectos.");
+        codeMessage.textContent = "Código o fecha incorrectos.";
     }
 }
 
