@@ -1,39 +1,62 @@
 body {
-    background-color: #111;
-    color: #eee;
-    font-family: 'Arial', sans-serif; /* Cambié a una fuente más bonita */
+    background-color: #181818; /* Color de fondo oscuro */
+    color: #e0e0e0; /* Color del texto */
+    font-family: 'Courier New', Courier, monospace; /* Fuente de estilo más aterrador */
     text-align: center;
 }
 
 .text-container {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-h1, h2, h3 {
-    font-size: 2.5em; /* Aumenté el tamaño del texto */
+h1 {
+    font-size: 36px; /* Tamaño de fuente más grande */
+    margin-bottom: 20px;
 }
 
-#book {
-    font-size: 50px;
+h3 {
+    font-size: 24px; /* Tamaño de fuente más grande para los subtítulos */
+    margin: 20px 0;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 80%; /* Ancho de los campos de texto */
+    padding: 10px;
+    font-size: 18px; /* Tamaño de fuente más grande */
+    margin: 10px 0;
+    border: 2px solid #e0e0e0; /* Borde claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #282828; /* Fondo del campo de texto oscuro */
+    color: #e0e0e0; /* Color del texto del campo de texto */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px; /* Tamaño de fuente más grande */
     cursor: pointer;
-    margin: 20px;
+    background-color: #444; /* Color de fondo del botón */
+    color: #e0e0e0; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: #666; /* Color de fondo del botón al pasar el ratón */
 }
 
 .hidden {
-    display: none;
+    display: none; /* Ocultar elementos */
+}
+
+#book {
+    font-size: 30px; /* Tamaño de fuente del libro */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin: 20px;
 }
 
 .story {
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 18px; /* Tamaño de fuente para las historias */
+    margin: 10px 0; /* Margen entre historias */
 }
-
-input[type="date"] {
-    font-size: 1.5em; /* Aumenté el tamaño del input de fecha */
-}
-
-#historyText {
-    font-size: 1.5em; /* Aumenté el tamaño del texto de historia */
-}
-
 
