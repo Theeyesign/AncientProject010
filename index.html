@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Sección para ingresar el código de las 7 letras y la fecha -->
-    <div id="code-section">
+    <!-- Sección de entrada del código inicial -->
+    <div id="initial-code-section">
+        <input type="text" id="initialCode" placeholder="Introduce el código inicial" />
+        <button onclick="checkInitialCode()">Enviar</button>
+    </div>
+
+    <!-- Sección para ingresar las 7 letras y la fecha, inicialmente oculta -->
+    <div id="code-section" class="hidden">
         <input type="text" id="letterCode" placeholder="Introduce las 7 letras" />
         <input type="text" id="dateCode" placeholder="Fecha (DD/MM/AAAA)" />
         <button onclick="checkCode()">Enviar</button>
     </div>
 
     <!-- Icono de libro en la parte superior izquierda -->
-    <div id="book-icon" onclick="toggleBook()">
+    <div id="book-icon" class="hidden" onclick="toggleBook()">
         📖
     </div>
 
@@ -23,7 +29,6 @@
     <div id="storyBook" class="hidden">
         <h3>Libro de Historias</h3>
         <div class="stories">
-            <!-- Genera los 25 candados -->
             <script>
                 for (let i = 0; i < 25; i++) {
                     document.write('<div class="story-space">🔒</div>');
