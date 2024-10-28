@@ -3,8 +3,9 @@ function checkCode() {
     if (codeInput === "TheRingIsWatching") {
         document.getElementById("intro").classList.add("hidden");
         document.getElementById("content").classList.remove("hidden");
+        document.getElementById("error").classList.add("hidden");
     } else {
-        alert("Código incorrecto. Intenta de nuevo.");
+        document.getElementById("error").classList.remove("hidden");
     }
 }
 
@@ -26,7 +27,6 @@ function checkDate() {
     document.getElementById("historyContainer").classList.remove("hidden");
 }
 
-}
 
 
 
