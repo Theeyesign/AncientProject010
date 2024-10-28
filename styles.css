@@ -12,40 +12,54 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+    flex-direction: column;
 }
 
-#main-section, #secret-section {
+#code-section {
     text-align: center;
-    border: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+#book-icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#storyBook {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222;
+    color: #fff;
     padding: 20px;
-    width: 80%;
-    max-width: 500px;
-    transition: opacity 0.3s;
+    width: 300px;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hidden {
     display: none;
 }
 
-.date-box {
-    margin: 20px 0;
+.stories {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
 
-input {
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.story-space {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px dashed #555;
 }
-
-.divider {
-    border: none;
-    border-top: 2px solid #e0e0e0; /* Color de la viñeta */
-    margin: 20px 0; /* Espaciado alrededor de la viñeta */
-    width: 80%; /* Ancho de la viñeta */
-    margin-left: auto;
-    margin-right: auto; /* Centrando la viñeta */
-}
-
 
