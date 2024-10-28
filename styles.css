@@ -13,6 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    text-align: center;
 }
 
 .hidden {
@@ -20,7 +21,7 @@ body {
 }
 
 #initial-code-section, #code-section {
-    text-align: center;
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
@@ -29,7 +30,7 @@ body {
     top: 10px;
     left: 10px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 2em;
 }
 
 #storyBook {
@@ -59,7 +60,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.5em;
     border: 1px dashed #555;
+}
+
+#errorMessage, #codeMessage {
+    color: #ff4040;
+    font-size: 1em;
 }
 
