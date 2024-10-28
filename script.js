@@ -13,7 +13,6 @@ function toggleBook() {
     const storyBook = document.getElementById("storyBook");
     const codeSection = document.getElementById("code-section");
 
-    // Alterna entre mostrar el libro y las fechas/letras
     if (storyBook.classList.contains("hidden")) {
         storyBook.classList.remove("hidden");
         codeSection.classList.add("hidden");
@@ -28,11 +27,12 @@ function checkCode() {
     const dateCode = document.getElementById("dateCode").value;
     const codeMessage = document.getElementById("codeMessage");
 
-    if (letterCode === "XXXXXXX" && dateCode === "22/10/740") {  // Ajusta los valores según tus necesidades
+    if (letterCode === "XXXXXXX" && dateCode === "22/10/740") {
         codeMessage.textContent = "Este es el inicio, el viajero que nunca regresó ha regresado con malas noticias. Una guerra se aproxima.";
     } else {
         codeMessage.textContent = "Código o fecha incorrectos.";
     }
 }
+
 
 
