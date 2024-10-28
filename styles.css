@@ -1,23 +1,30 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #111;
+    color: #eee;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+}
+
+.text-container {
+    margin-top: 50px;
+}
+
+h1, h2, h3 {
+    font-size: 2em;
+}
+
+#book {
+    font-size: 50px;
+    cursor: pointer;
+    margin: 20px;
 }
 
 .hidden {
     display: none;
 }
 
-.text-container {
-    margin: 20px;
-}
-
-#book {
-    font-size: 50px;
-    cursor: pointer;
-}
-
 .story {
-    margin: 10px;
+    font-size: 20px;
+    margin: 10px 0;
 }
+
