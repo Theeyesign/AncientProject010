@@ -1,6 +1,6 @@
 function checkInitialCode() {
     const initialCode = document.getElementById("initialCode").value;
-    if (initialCode === "theringiswatching") {
+    if (initialCode === "TheRingIsWatching") {
         document.getElementById("initial-code-section").classList.add("hidden");
         document.getElementById("code-section").classList.remove("hidden");
         document.getElementById("book-icon").classList.remove("hidden");
@@ -11,7 +11,16 @@ function checkInitialCode() {
 
 function toggleBook() {
     const storyBook = document.getElementById("storyBook");
-    storyBook.classList.toggle("hidden");
+    const codeSection = document.getElementById("code-section");
+
+    // Alterna entre mostrar el libro y las fechas/letras
+    if (storyBook.classList.contains("hidden")) {
+        storyBook.classList.remove("hidden");
+        codeSection.classList.add("hidden");
+    } else {
+        storyBook.classList.add("hidden");
+        codeSection.classList.remove("hidden");
+    }
 }
 
 function checkCode() {
@@ -24,4 +33,5 @@ function checkCode() {
         alert("Código o fecha incorrectos.");
     }
 }
+
 
