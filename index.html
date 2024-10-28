@@ -7,32 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="main-section">
-        <h1>Introduce el código</h1>
-        <input type="text" id="codeInput" placeholder="Escribe el código aquí" />
+    <!-- Sección para ingresar el código de las 7 letras y la fecha -->
+    <div id="code-section">
+        <input type="text" id="letterCode" placeholder="Introduce las 7 letras" />
+        <input type="text" id="dateCode" placeholder="Fecha (DD/MM/AAAA)" />
         <button onclick="checkCode()">Enviar</button>
     </div>
-    <div id="secret-section" class="hidden">
-        <h2>Conoce mi historia</h2>
-        <div>
-            <input type="text" id="lettersInput" maxlength="7" placeholder="? Escribe 7 letras" />
-        </div>
-        <div id="date-inputs">
-            <div class="date-box">
-                <input type="text" id="day" placeholder="Día" />
-                <input type="text" id="month" placeholder="Mes" />
-                <input type="text" id="year" placeholder="Año" />
-            </div>
-            <hr class="divider" /> <!-- Viñeta añadida -->
-            <button onclick="showHistory()">Mostrar Historia</button>
-        </div>
-        <h3 id="historyTitle" class="hidden">Historia</h3>
-        <div id="notes"></div>
+
+    <!-- Icono de libro en la parte superior izquierda -->
+    <div id="book-icon" onclick="toggleBook()">
+        📖
     </div>
+
+    <!-- Libro con 25 espacios de historias bloqueadas -->
+    <div id="storyBook" class="hidden">
+        <h3>Libro de Historias</h3>
+        <div class="stories">
+            <!-- Genera los 25 candados -->
+            <script>
+                for (let i = 0; i < 25; i++) {
+                    document.write('<div class="story-space">🔒</div>');
+                }
+            </script>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
 
 
 
