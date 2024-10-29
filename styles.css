@@ -1,74 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+
 body {
-    background-color: #181818; /* Color de fondo oscuro */
-    color: #e0e0e0; /* Color del texto */
-    font-family: 'Courier New', Courier, monospace; /* Fuente de estilo más aterrador */
+    background-color: #f4f1e3; /* Fondo color pergamino */
+    color: #3e3e3e; /* Texto color oscuro envejecido */
+    font-family: 'IM Fell English', serif; /* Fuente antigua */
     text-align: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    border: 4px solid #8b4513; /* Borde marrón estilo antiguo */
+    background: linear-gradient(135deg, #f8f4e8, #e9e4c7);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2); /* Sombra interior */
+    border-radius: 10px;
 }
 
 .text-container {
-    background-color: rgba(30, 30, 30, 0.8); /* Fondo con opacidad */
-    padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    background-color: rgba(252, 245, 227, 0.85); /* Fondo pergamino */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 2px dashed #8b4513; /* Borde envejecido */
+    max-width: 600px;
     margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 32px; /* Tamaño de fuente más grande */
+    font-size: 36px;
     margin-bottom: 20px;
+    color: #8b4513; /* Color de encabezado marrón */
 }
 
 h3 {
-    font-size: 22px; /* Tamaño de fuente más grande para los subtítulos */
+    font-size: 26px;
+    color: #5e3a00;
     margin: 20px 0;
 }
 
 input[type="text"],
 input[type="date"] {
-    width: 70%; /* Ancho de los campos de texto */
-    padding: 10px;
-    font-size: 20px; /* Tamaño de fuente más grande */
-    margin: 10px 0;
-    border: 2px solid #e0e0e0; /* Borde claro */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #282828; /* Fondo del campo de texto oscuro */
-    color: #e0e0e0; /* Color del texto del campo de texto */
+    width: 75%;
+    padding: 12px;
+    font-size: 18px;
+    margin: 15px 0;
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+    background-color: #f4f1e3;
+    color: #3e3e3e;
 }
 
 button {
     padding: 10px 20px;
-    font-size: 20px; /* Tamaño de fuente más grande */
+    font-size: 18px;
     cursor: pointer;
-    background-color: #444; /* Color de fondo del botón */
-    color: #e0e0e0; /* Color del texto del botón */
+    background-color: #b5651d; /* Botón estilo antiguo */
+    color: #f4f1e3;
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #666; /* Color de fondo del botón al pasar el ratón */
+    background-color: #8b4513;
 }
 
 .hidden {
-    display: none; /* Ocultar elementos */
+    display: none;
 }
 
 #book {
-    font-size: 30px; /* Tamaño de fuente del libro */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    margin: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 15px;
+    color: #8b4513;
 }
 
 .story {
-    font-size: 18px; /* Tamaño de fuente para las historias */
-    margin: 10px 0; /* Margen entre historias */
+    font-size: 18px;
+    margin: 10px 0;
+    color: #8b4513;
+}
+
+#historyContainer {
+    background-color: rgba(252, 245, 227, 0.8);
+    border: 2px solid #8b4513;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#historyText {
+    font-size: 20px;
+    font-style: italic;
+    color: #5e3a00;
 }
 
