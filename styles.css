@@ -1,104 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
-
 body {
-    background-color: #0d0d0d; /* Fondo negro */
-    color: #c0c0c0; /* Texto gris claro */
-    font-family: 'IM Fell English', serif;
-    text-align: center;
-}
-
-.container {
+    background-color: #0c0c0c;
+    color: #c7c7c7;
+    font-family: 'Times New Roman', serif;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    margin: 0;
+}
+
+.text-container, #content {
+    border: 2px solid #555;
     padding: 20px;
-    border: 2px solid #444; /* Borde oscuro */
-    background: #1c1c1c;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Sombra profunda */
-}
-
-.text-container {
-    background-color: #1e1e1e;
-    padding: 25px;
-    border-radius: 8px;
-    border: 2px solid #444; /* Borde gris oscuro */
     max-width: 600px;
-    margin-bottom: 20px;
-    color: #e5e5e5;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius: 10px;
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #c0c0c0;
-}
-
-h3 {
-    font-size: 26px;
-    color: #c0c0c0;
-    margin: 20px 0;
-}
-
-input[type="text"],
-input[type="date"] {
-    width: 75%;
-    padding: 12px;
+input, button {
+    padding: 10px;
+    margin: 10px;
     font-size: 18px;
-    margin: 15px 0;
-    border: 2px solid #444;
+}
+
+input[type="text"] {
+    width: 90%;
+}
+
+.story, .cage {
+    background-color: #333;
+    padding: 10px;
+    margin: 5px 0;
     border-radius: 5px;
-    background-color: #1c1c1c;
-    color: #e5e5e5;
+    color: #fff;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 18px;
+#hole {
+    font-size: 30px;
     cursor: pointer;
-    background-color: #444;
-    color: #e5e5e5;
-    border: none;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #5c5c5c;
 }
 
 .hidden {
     display: none;
 }
 
-#book {
-    font-size: 35px;
-    cursor: pointer;
-    color: #8b4513;
-}
-
-.story {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #8b4513;
-    padding: 10px;
-    border: 2px solid #444; /* Borde para cada historia */
-    background-color: #222;
-    border-radius: 5px;
-}
-
-#historyContainer {
-    background-color: #1e1e1e;
-    border: 2px solid #444;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 5px;
-}
-
-#historyText {
-    font-size: 20px;
-    font-style: italic;
-    color: #d4d4d4;
-}
 
