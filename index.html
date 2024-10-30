@@ -15,29 +15,14 @@
     </div>
 
     <div id="content" class="hidden">
-        <div id="book" onclick="toggleStories()">📖</div>
-        <div id="stories" class="hidden">
+        <div id="book" onclick="openBook()">📖</div>
+        <div id="bookContent" class="hidden">
             <h3>Historias Desbloqueadas</h3>
             <div class="story" id="story1">🔒 Historia 1</div>
-            <div class="story" id="story2">🔒 Historia 2</div> 
-            <div class="story" id="story3">🔒 Historia 3</div> 
-            <div class="story" id="story4">🔒 Historia 4</div> 
-            <div class="story" id="story5">🔒 Historia 5</div> 
-            <div class="story" id="story6">🔒 Historia 6</div> 
-            <div class="story" id="story7">🔒 Historia 7</div> 
-            <div class="story" id="story8">🔒 Historia 8</div> 
-            <div class="story" id="story9">🔒 Historia 9</div> 
-            <div class="story" id="story10">🔒 Historia 10</div> 
-            <div class="story" id="story11">🔒 Historia 11</div> 
-            <div class="story" id="story12">🔒 Historia 12</div> 
-            <div class="story" id="story13">🔒 Historia 13</div> 
-            <div class="story" id="story14">🔒 Historia 14</div> 
-            <div class="story" id="story15">🔒 Historia 15</div>
-            <!-- Puedes agregar elementos adicionales o mejorar estilos -->
+            <!-- Se crean 15 historias con candados -->
+            ${Array(15).fill().map((_, i) => `<div class="story">🔒 Historia ${i + 1}</div>`).join('')}
         </div>
 
-        <div id="rift" class="rift hidden" onclick="toggleRift()">🕳️</div>
-        
         <h3>Ingresa una fecha:</h3>
         <input type="date" id="dateInput">
         <button onclick="checkDate()">Ver Historia</button>
@@ -48,6 +33,20 @@
 
         <h3>Los secretos de los maestros:</h3>
         <input type="text" id="letterInput" maxlength="7" placeholder="Introduce 7 letras aquí...">
+
+        <div id="rift" class="rift hidden" onclick="toggleJailView()">🕳️</div>
+    </div>
+
+    <div id="jailView" class="hidden">
+        <h3>Las Jaulas</h3>
+        <div class="jail-container">
+            <img src="red_jail.png" alt="Jaula Roja" class="jail-image">
+            <img src="green_jail.png" alt="Jaula Verde" class="jail-image">
+            <img src="blue_jail.png" alt="Jaula Azul" class="jail-image">
+            <img src="white_jail.png" alt="Jaula Blanca" class="jail-image">
+            <img src="black_jail.png" alt="Jaula Negra" class="jail-image">
+        </div>
+        <button onclick="backToMain()">Volver</button>
     </div>
 
     <script src="script.js"></script>
