@@ -41,4 +41,3 @@ function backToMain() {
     document.getElementById('content').classList.remove('hidden');
 }
 
-
