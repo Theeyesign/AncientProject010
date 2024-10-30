@@ -1,12 +1,17 @@
 function checkCode() {
-    const codeInput = document.getElementById("codeInput").value;
-    const errorText = document.getElementById("error");
-    if (codeInput === "TheRingIsWatching") {
-        document.getElementById("intro").classList.add("hidden");
-        document.getElementById("content").classList.remove("hidden");
-        errorText.classList.add("hidden");
+    const codeInput = document.getElementById("codeInput").value.trim().toLowerCase();
+    const intro = document.getElementById("intro");
+    const content = document.getElementById("content");
+    const error = document.getElementById("error");
+    const hole = document.getElementById("hole");
+
+    if (codeInput === "el anillo está observando") {
+        intro.classList.add("hidden");
+        content.classList.remove("hidden");
+    } else if (codeInput === "el vacío") {
+        hole.classList.remove("hidden");
     } else {
-        errorText.classList.remove("hidden");
+        error.classList.remove("hidden");
     }
 }
 
@@ -17,14 +22,21 @@ function toggleStories() {
 
 function checkDate() {
     const dateInput = document.getElementById("dateInput").value;
+    const historyContainer = document.getElementById("historyContainer");
     const historyText = document.getElementById("historyText");
-    
-    if (dateInput === "2023-10-22") { // Cambia esta fecha según tus necesidades
-        historyText.innerText = "Este es el inicio, el viajero que nunca regresó ha regresado con malas noticias. Una guerra se aproxima.";
-        document.getElementById("historyContainer").classList.remove("hidden");
+
+    if (dateInput === "2023-10-22") {
+        historyText.textContent = "Este es el inicio, el viajero que nunca regresó ha regresado con malas noticias. Una guerra se aproxima.";
+        historyContainer.classList.remove("hidden");
     } else {
-        historyText.innerText = "No hay historia para esta fecha.";
+        historyText.textContent = "No hay historia para esta fecha.";
+        historyContainer.classList.remove("hidden");
     }
+}
+
+function toggleCages() {
+    const cages = document.getElementById("cages");
+    cages.classList.toggle("hidden");
 }
 
 
