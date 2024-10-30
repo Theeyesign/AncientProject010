@@ -1,43 +1,44 @@
 function checkCode() {
-    const codeInput = document.getElementById("codeInput").value.trim().toLowerCase();
-    const intro = document.getElementById("intro");
-    const content = document.getElementById("content");
-    const error = document.getElementById("error");
-    const hole = document.getElementById("hole");
-
-    if (codeInput === "el anillo está observando") {
-        intro.classList.add("hidden");
-        content.classList.remove("hidden");
-    } else if (codeInput === "el vacío") {
-        hole.classList.remove("hidden");
+    const input = document.getElementById('codeInput').value.trim();
+    if (input === "El anillo está observando") {
+        document.getElementById('intro').classList.add('hidden');
+        document.getElementById('content').classList.remove('hidden');
+    } else if (input === "El vacío") {
+        document.getElementById('rift').classList.remove('hidden');
     } else {
-        error.classList.remove("hidden");
+        document.getElementById('error').classList.remove('hidden');
+        document.getElementById('error').innerText = "Código incorrecto. Intenta de nuevo.";
     }
 }
 
-function toggleStories() {
-    const stories = document.getElementById("stories");
-    stories.classList.toggle("hidden");
+function openBook() {
+    const bookContent = document.getElementById('bookContent');
+    bookContent.classList.toggle('hidden');
 }
 
 function checkDate() {
-    const dateInput = document.getElementById("dateInput").value;
-    const historyContainer = document.getElementById("historyContainer");
-    const historyText = document.getElementById("historyText");
+    const dateInput = document.getElementById('dateInput').value;
+    const historyContainer = document.getElementById('historyContainer');
+    const historyText = document.getElementById('historyText');
 
-    if (dateInput === "2023-10-22") {
-        historyText.textContent = "Este es el inicio, el viajero que nunca regresó ha regresado con malas noticias. Una guerra se aproxima.";
-        historyContainer.classList.remove("hidden");
+    if (dateInput === "740-10-22") {
+        historyText.innerText = "Este es el inicio, el viajero que nunca regresó ha regresado con malas noticias. Una guerra se aproxima.";
+        historyContainer.classList.remove('hidden');
     } else {
-        historyText.textContent = "No hay historia para esta fecha.";
-        historyContainer.classList.remove("hidden");
+        historyText.innerText = "No se encontraron eventos en esta fecha.";
+        historyContainer.classList.remove('hidden');
     }
 }
 
-function toggleCages() {
-    const cages = document.getElementById("cages");
-    cages.classList.toggle("hidden");
+function toggleJailView() {
+    const jailView = document.getElementById('jailView');
+    jailView.classList.toggle('hidden');
+    document.getElementById('content').classList.toggle('hidden');
 }
 
+function backToMain() {
+    document.getElementById('jailView').classList.add('hidden');
+    document.getElementById('content').classList.remove('hidden');
+}
 
 
