@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Las Ruinas De El Perdido</title>
+    <title>El Rincón Oscuro</title>
 </head>
 <body>
-    <!-- Introducción -->
     <div id="intro" class="text-container">
         <h1>Bienvenido al Rincón Oscuro</h1>
         <input type="text" id="codeInput" placeholder="Introduce el código aquí...">
@@ -15,16 +14,30 @@
         <p id="error" class="hidden">Código incorrecto. Intenta de nuevo.</p>
     </div>
 
-    <!-- Contenido principal -->
     <div id="content" class="hidden">
         <div id="book" onclick="toggleStories()">📖</div>
         <div id="stories" class="hidden">
             <h3>Historias Desbloqueadas</h3>
             <div class="story" id="story1">🔒 Historia 1</div>
-            <div class="story" id="story2">🔒 Historia 2</div>
+            <div class="story" id="story2">🔒 Historia 2</div> 
+            <div class="story" id="story3">🔒 Historia 3</div> 
+            <div class="story" id="story4">🔒 Historia 4</div> 
+            <div class="story" id="story5">🔒 Historia 5</div> 
+            <div class="story" id="story6">🔒 Historia 6</div> 
+            <div class="story" id="story7">🔒 Historia 7</div> 
+            <div class="story" id="story8">🔒 Historia 8</div> 
+            <div class="story" id="story9">🔒 Historia 9</div> 
+            <div class="story" id="story10">🔒 Historia 10</div> 
+            <div class="story" id="story11">🔒 Historia 11</div> 
+            <div class="story" id="story12">🔒 Historia 12</div> 
+            <div class="story" id="story13">🔒 Historia 13</div> 
+            <div class="story" id="story14">🔒 Historia 14</div> 
+            <div class="story" id="story15">🔒 Historia 15</div>
+            <!-- Puedes agregar elementos adicionales o mejorar estilos -->
         </div>
 
-        <!-- Sección de fecha y 7 letras -->
+        <div id="rift" class="rift hidden" onclick="toggleRift()">🕳️</div>
+        
         <h3>Ingresa una fecha:</h3>
         <input type="date" id="dateInput">
         <button onclick="checkDate()">Ver Historia</button>
@@ -35,26 +48,10 @@
 
         <h3>Los secretos de los maestros:</h3>
         <input type="text" id="letterInput" maxlength="7" placeholder="Introduce 7 letras aquí...">
-
-        <!-- Agujero que aparece con "El vacío" -->
-        <div id="hole" class="hidden" onclick="toggleCages()">
-            🕳️
-        </div>
-        <div id="cages" class="hidden">
-            <div class="cage red">🔒 Jaula Roja</div>
-            <div class="cage green">🔒 Jaula Verde</div>
-            <div class="cage blue">🔒 Jaula Azul</div>
-            <div class="cage white">🔒 Jaula Blanca</div>
-            <div class="cage black">🔒 Jaula Negra</div>
-        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-</body>
-</html>
-
 
 
